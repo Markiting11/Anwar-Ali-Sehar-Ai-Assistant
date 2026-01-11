@@ -1,0 +1,7 @@
+{
+  "name": "Anwar Ali Sehar - Portfolio & Voice AI",
+  "description": "Professional portfolio for Anwar Ali Sehar, featuring a Gemini Live voice assistant for real-time engagement in English and Urdu.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
