@@ -45,26 +45,33 @@ const Contact: React.FC = () => {
           <div className="relative">
             <div className="absolute top-0 left-0 w-full h-full bg-brand-dark rounded-3xl translate-x-4 translate-y-4 -z-10"></div>
             <div className="bg-white p-10 rounded-3xl border-2 border-brand-dark">
-              <form className="space-y-8">
+              {/* Netlify Form Implementation */}
+              <form 
+                name="contact" 
+                method="POST" 
+                data-netlify="true"
+                className="space-y-8"
+              >
+                <input type="hidden" name="form-name" value="contact" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   <div className="space-y-2">
                     <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Your Name</label>
-                    <input type="text" className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-100 focus:border-brand-green outline-none transition-colors text-brand-dark font-bold" placeholder="Full Name" />
+                    <input name="name" type="text" required className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-100 focus:border-brand-green outline-none transition-colors text-brand-dark font-bold" placeholder="Full Name" />
                   </div>
                   <div className="space-y-2">
                     <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Email</label>
-                    <input type="email" className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-100 focus:border-brand-green outline-none transition-colors text-brand-dark font-bold" placeholder="name@example.com" />
+                    <input name="email" type="email" required className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-100 focus:border-brand-green outline-none transition-colors text-brand-dark font-bold" placeholder="name@example.com" />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Project Concept</label>
-                  <input type="text" className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-100 focus:border-brand-green outline-none transition-colors text-brand-dark font-bold" placeholder="e.g. Local SEO Growth" />
+                  <input name="subject" type="text" className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-100 focus:border-brand-green outline-none transition-colors text-brand-dark font-bold" placeholder="e.g. Local SEO Growth" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Details</label>
-                  <textarea rows={4} className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-100 focus:border-brand-green outline-none transition-colors text-brand-dark font-bold" placeholder="Tell me about your business..."></textarea>
+                  <textarea name="message" rows={4} required className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-100 focus:border-brand-green outline-none transition-colors text-brand-dark font-bold" placeholder="Tell me about your business..."></textarea>
                 </div>
-                <button className="w-full py-5 bg-brand-dark text-white rounded-none font-black uppercase tracking-[0.2em] hover:bg-brand-green hover:text-brand-dark transition-all duration-300">Submit Request</button>
+                <button type="submit" className="w-full py-5 bg-brand-dark text-white rounded-none font-black uppercase tracking-[0.2em] hover:bg-brand-green hover:text-brand-dark transition-all duration-300">Submit Request</button>
               </form>
             </div>
           </div>
