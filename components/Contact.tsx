@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Contact: React.FC = () => {
@@ -45,14 +44,21 @@ const Contact: React.FC = () => {
           <div className="relative">
             <div className="absolute top-0 left-0 w-full h-full bg-brand-dark rounded-3xl translate-x-4 translate-y-4 -z-10"></div>
             <div className="bg-white p-10 rounded-3xl border-2 border-brand-dark">
-              {/* Netlify Form Implementation */}
+              {/* 
+                Netlify Form Integration 
+                The 'name' attribute on the form and inputs is critical.
+              */}
               <form 
                 name="contact" 
                 method="POST" 
                 data-netlify="true"
+                data-netlify-honeypot="bot-field"
                 className="space-y-8"
               >
                 <input type="hidden" name="form-name" value="contact" />
+                <p className="hidden">
+                  <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                   <div className="space-y-2">
                     <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Your Name</label>
