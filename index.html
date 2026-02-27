@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Anwar Ali Sehar | SEO & AI Specialist</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -21,6 +20,16 @@
       }
     }
   </script>
+  <style>
+    /* Remove tap delay on mobile */
+    button, a {
+      touch-action: manipulation;
+    }
+    /* Smooth scroll for better feel */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script type="importmap">
   {
@@ -32,8 +41,10 @@
     }
   }
   </script>
+<link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-white text-brand-dark">
   <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>

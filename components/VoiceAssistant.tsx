@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { GoogleGenAI, LiveServerMessage, Modality } from '@google/genai';
 import { SYSTEM_INSTRUCTION } from '../constants';
@@ -7,6 +6,7 @@ const VoiceAssistant: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [isConnecting, setIsConnecting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [history, setHistory] = useState<{ type: 'user' | 'ai', text: string }[]>([]);
   
   const audioContextRef = useRef<AudioContext | null>(null);
@@ -15,9 +15,21 @@ const VoiceAssistant: React.FC = () => {
   const nextStartTimeRef = useRef<number>(0);
   const sourcesRef = useRef<Set<AudioBufferSourceNode>>(new Set());
 
-  const toggleAssistant = () => setIsOpen(!isOpen);
+  // Function to initialize Audio Context - MUST be called via user click
+  const initAudio = () => {
+    if (!audioContextRef.current) {
+      const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
+      audioContextRef.current = new AudioContextClass({ sampleRate: 16000 });
+      outAudioContextRef.current = new AudioContextClass({ sampleRate: 24000 });
+    }
+  };
 
-  // Audio helpers
+  const toggleAssistant = () => {
+    initAudio(); // Warm up context on toggle
+    setIsOpen(!isOpen);
+    setErrorMessage(null);
+  };
+
   const encode = (bytes: Uint8Array) => {
     let binary = '';
     const len = bytes.byteLength;
@@ -53,15 +65,27 @@ const VoiceAssistant: React.FC = () => {
   const startSession = async () => {
     if (isActive || isConnecting) return;
     setIsConnecting(true);
+    setErrorMessage(null);
 
     try {
+      // 1. Initialize Audio Contexts immediately (User Gesture context)
+      initAudio();
+      
+      // 2. Resume contexts (CRITICAL for Mobile)
+      if (audioContextRef.current?.state === 'suspended') await audioContextRef.current.resume();
+      if (outAudioContextRef.current?.state === 'suspended') await outAudioContextRef.current.resume();
+
       const ai = new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
       
-      audioContextRef.current = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 16000 });
-      outAudioContextRef.current = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 24000 });
-      
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      
+      // 3. Request microphone
+      const stream = await navigator.mediaDevices.getUserMedia({ 
+        audio: { 
+          echoCancellation: true,
+          noiseSuppression: true,
+          autoGainControl: true
+        } 
+      });
+
       const sessionPromise = ai.live.connect({
         model: 'gemini-2.5-flash-native-audio-preview-12-2025',
         config: {
@@ -101,6 +125,7 @@ const VoiceAssistant: React.FC = () => {
             scriptProcessor.connect(audioContextRef.current!.destination);
           },
           onmessage: async (message: LiveServerMessage) => {
+            // Handle Transcriptions
             if (message.serverContent?.inputTranscription) {
                setHistory(prev => {
                  const last = prev[prev.length - 1];
@@ -124,8 +149,9 @@ const VoiceAssistant: React.FC = () => {
                });
             }
 
+            // Handle Audio Output
             const audioData = message.serverContent?.modelTurn?.parts[0]?.inlineData?.data;
-            if (audioData && outAudioContextRef.current && outAudioContextRef.current.state !== 'closed') {
+            if (audioData && outAudioContextRef.current) {
               const audioBuffer = await decodeAudioData(decode(audioData), outAudioContextRef.current, 24000, 1);
               const source = outAudioContextRef.current.createBufferSource();
               source.buffer = audioBuffer;
@@ -139,9 +165,7 @@ const VoiceAssistant: React.FC = () => {
             }
 
             if (message.serverContent?.interrupted) {
-              sourcesRef.current.forEach(s => {
-                try { s.stop(); } catch {}
-              });
+              sourcesRef.current.forEach(s => { try { s.stop(); } catch {} });
               sourcesRef.current.clear();
               nextStartTimeRef.current = 0;
             }
@@ -149,16 +173,18 @@ const VoiceAssistant: React.FC = () => {
           onclose: () => stopSession(),
           onerror: (e) => {
             console.error('Session error:', e);
+            setErrorMessage("Tap to restart link.");
             stopSession();
           }
         }
       });
       
       sessionRef.current = await sessionPromise;
-    } catch (err) {
-      console.error('Failed to start session:', err);
+    } catch (err: any) {
+      console.error('Mic start failed:', err);
       setIsConnecting(false);
       setIsActive(false);
+      setErrorMessage(err.name === 'NotAllowedError' ? "Mic access denied." : "Mic error. Try again.");
     }
   };
 
@@ -167,22 +193,9 @@ const VoiceAssistant: React.FC = () => {
        try { sessionRef.current.close(); } catch {}
        sessionRef.current = null;
     }
-    
-    if (audioContextRef.current && audioContextRef.current.state !== 'closed') {
-      audioContextRef.current.close().catch(console.error);
-    }
-    audioContextRef.current = null;
-
-    if (outAudioContextRef.current && outAudioContextRef.current.state !== 'closed') {
-      outAudioContextRef.current.close().catch(console.error);
-    }
-    outAudioContextRef.current = null;
-    
     setIsActive(false);
     setIsConnecting(false);
-    sourcesRef.current.forEach(s => {
-      try { s.stop(); } catch {}
-    });
+    sourcesRef.current.forEach(s => { try { s.stop(); } catch {} });
     sourcesRef.current.clear();
     nextStartTimeRef.current = 0;
   };
@@ -193,7 +206,6 @@ const VoiceAssistant: React.FC = () => {
 
   return (
     <div className="fixed bottom-6 right-6 z-[60] flex flex-col items-end font-sans">
-      {/* Assistant Window */}
       {isOpen && (
         <div className="mb-4 w-80 sm:w-96 h-[500px] bg-brand-dark rounded-3xl shadow-2xl border border-white/10 flex flex-col overflow-hidden animate-in slide-in-from-bottom-4 duration-500">
           <div className="p-6 bg-brand-gray border-b border-white/5 flex justify-between items-center">
@@ -205,13 +217,20 @@ const VoiceAssistant: React.FC = () => {
           </div>
           
           <div className="flex-1 p-6 overflow-y-auto bg-brand-dark flex flex-col gap-4">
-            {history.length === 0 && (
+            {errorMessage && (
+              <div className="bg-red-500/10 border border-red-500/20 p-4 rounded-xl text-red-400 text-xs font-bold text-center">
+                <i className="fas fa-exclamation-triangle mb-2 text-lg block"></i>
+                {errorMessage}
+              </div>
+            )}
+            
+            {history.length === 0 && !errorMessage && (
               <div className="text-center py-12">
                 <div className="w-16 h-16 bg-brand-green/10 rounded-full flex items-center justify-center mx-auto mb-6 text-brand-green">
                   <i className="fas fa-robot text-2xl"></i>
                 </div>
-                <p className="text-gray-400 text-xs font-bold uppercase tracking-tighter">Voice system active.</p>
-                <p className="text-gray-500 text-sm mt-2">Ask me about SEO, AI tools, or contact Anwar.</p>
+                <p className="text-gray-400 text-xs font-bold uppercase tracking-tighter">System Ready.</p>
+                <p className="text-gray-500 text-sm mt-2 px-4">Tap 'Start Voice Link' below to talk to Anwar's AI.</p>
               </div>
             )}
             {history.map((msg, i) => (
@@ -236,7 +255,7 @@ const VoiceAssistant: React.FC = () => {
               <button 
                 onClick={startSession}
                 disabled={isConnecting}
-                className={`w-full py-4 ${isConnecting ? 'bg-gray-800 text-gray-600' : 'bg-brand-green text-brand-dark'} rounded-xl font-black uppercase tracking-widest text-xs flex items-center justify-center gap-2 transition-all duration-300`}
+                className={`w-full py-4 ${isConnecting ? 'bg-gray-800 text-gray-600' : 'bg-brand-green text-brand-dark'} rounded-xl font-black uppercase tracking-widest text-xs flex items-center justify-center gap-2 transition-all duration-300 active:scale-95`}
               >
                 {isConnecting ? (
                   <i className="fas fa-spinner fa-spin"></i>
@@ -247,25 +266,17 @@ const VoiceAssistant: React.FC = () => {
                 )}
               </button>
             )}
-            <p className="text-[10px] text-gray-500 text-center font-bold uppercase tracking-tighter">English & Urdu Supported</p>
           </div>
         </div>
       )}
 
-      {/* Floating Toggle Button */}
       <button
         onClick={toggleAssistant}
-        className={`w-16 h-16 rounded-full flex items-center justify-center text-brand-dark shadow-2xl transition-all transform hover:scale-110 active:scale-95 border-4 ${
+        className={`w-16 h-16 rounded-full flex items-center justify-center text-brand-dark shadow-2xl transition-all transform hover:scale-110 active:scale-90 border-4 ${
           isActive ? 'bg-white border-brand-green' : 'bg-brand-green border-brand-dark'
         }`}
       >
         <i className={`fas ${isOpen ? 'fa-times' : (isActive ? 'fa-microphone-lines' : 'fa-headset')} text-2xl`}></i>
-        {isActive && !isOpen && (
-          <span className="absolute -top-1 -right-1 flex h-4 w-4">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-4 w-4 bg-brand-green"></span>
-          </span>
-        )}
       </button>
     </div>
   );

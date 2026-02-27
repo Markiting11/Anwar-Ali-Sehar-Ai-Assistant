@@ -44,10 +44,6 @@ const Contact: React.FC = () => {
           <div className="relative">
             <div className="absolute top-0 left-0 w-full h-full bg-brand-dark rounded-3xl translate-x-4 translate-y-4 -z-10"></div>
             <div className="bg-white p-10 rounded-3xl border-2 border-brand-dark">
-              {/* 
-                Netlify Form Integration 
-                The 'name' attribute on the form and inputs is critical.
-              */}
               <form 
                 name="contact" 
                 method="POST" 

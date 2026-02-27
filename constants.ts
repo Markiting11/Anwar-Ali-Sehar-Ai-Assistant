@@ -29,31 +29,31 @@ Behavior:
 
 export const PROJECTS: any[] = [
   {
-    title: "Psychologist Portfolio",
-    description: "Professional portfolio designed for clarity and credibility.",
+    title: "Mental Health Platform",
+    description: "A calming, professional portfolio for clinical psychologists focusing on user trust and easy booking.",
     link: "https://savera-naeem.lovable.app/",
-    image: "https://picsum.photos/seed/psy/600/400",
+    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800",
     category: "Website"
   },
   {
-    title: "Cosmetics E-Commerce",
-    description: "Modern shop with conversion-ready design.",
+    title: "Premium Cosmetics Hub",
+    description: "High-conversion e-commerce experience with seamless navigation and aesthetic branding.",
     link: "https://shecosmetics.netlify.app/",
-    image: "https://picsum.photos/seed/cosmo/600/400",
+    image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=800",
     category: "Website"
   },
   {
-    title: "Local SEO Demo",
-    description: "Location-targeted SEO pages for lead generation.",
+    title: "Local SEO Growth Engine",
+    description: "Advanced location-based optimization strategies that increased lead volume by 300%.",
     link: "https://cdc.com.co/Miami/",
-    image: "https://picsum.photos/seed/seo/600/400",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
     category: "SEO"
   },
   {
-    title: "Student Question Solver",
-    description: "AI tool for instant educational problem-solving.",
+    title: "AI Question Solver",
+    description: "Specialized tool using Gemini Pro to solve complex educational queries instantly.",
     link: "https://ai.studio/apps/drive/16a4Vs4IJl2ldewRRyx57wXY6q-sz3u8H",
-    image: "https://picsum.photos/seed/edu/600/400",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
     category: "Tool"
   }
 ];

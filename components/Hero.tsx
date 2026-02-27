@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface HeroProps {
@@ -8,36 +7,83 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onCtaClick, onToolsClick }) => {
   return (
-    <section id="hero" className="relative bg-white py-24 lg:py-36 overflow-hidden">
-      <div className="absolute top-0 right-0 -translate-y-24 translate-x-24 w-[600px] h-[600px] bg-brand-green/5 rounded-full blur-[120px]"></div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="max-w-4xl">
-          <div className="inline-flex items-center gap-2 py-2 px-4 bg-brand-dark text-white rounded-full text-xs font-bold uppercase tracking-widest mb-8">
-            <span className="w-2 h-2 bg-brand-green rounded-full animate-pulse"></span>
-            Local Business Growth Specialist
+    <section id="hero" className="relative bg-white py-24 lg:py-40 overflow-hidden min-h-[90vh] flex items-center">
+      {/* Background Decor */}
+      <div className="absolute inset-0 z-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
+      <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[800px] h-[800px] bg-brand-green/10 rounded-full blur-[160px]"></div>
+      <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-green/5 rounded-full blur-[140px]"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          <div className="lg:col-span-8">
+            <div className="inline-flex items-center gap-3 py-2 px-5 bg-brand-dark text-white rounded-full text-xs font-black uppercase tracking-[0.2em] mb-10 shadow-xl shadow-brand-green/10">
+              <span className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-brand-green"></span>
+              </span>
+              Digital Strategy Architect
+            </div>
+            
+            <h1 className="text-7xl md:text-8xl lg:text-9xl font-black text-brand-dark tracking-tighter mb-8 leading-[0.85] animate-in fade-in slide-in-from-left-8 duration-700">
+              DOMINATE<br />
+              <span className="text-transparent" style={{ WebkitTextStroke: '2px #000' }}>THE WEB.</span><br />
+              <span className="bg-brand-green text-brand-dark px-4 inline-block -rotate-1 transform">WITH AI.</span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-gray-500 mb-12 max-w-2xl leading-relaxed font-medium">
+              I build custom <span className="text-brand-dark font-bold">AI engines</span> and <span className="text-brand-dark font-bold">Local SEO</span> systems that transform small businesses into market leaders.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
+              <button
+                onClick={onCtaClick}
+                className="group relative px-10 py-5 bg-brand-dark text-white font-black text-xl hover:bg-brand-green hover:text-brand-dark transition-all duration-500 uppercase tracking-tighter overflow-hidden shadow-2xl"
+              >
+                <span className="relative z-10 flex items-center gap-3">
+                  Start Your Growth
+                  <i className="fas fa-arrow-right group-hover:translate-x-2 transition-transform duration-300"></i>
+                </span>
+              </button>
+              
+              <button
+                onClick={() => {
+                   // This acts as a gesture for the mic as well
+                   const btn = document.querySelector('[class*="bottom-6"] button');
+                   if (btn instanceof HTMLElement) btn.click();
+                }}
+                className="px-10 py-5 bg-brand-green text-brand-dark border-4 border-brand-dark font-black text-xl hover:bg-brand-dark hover:text-white transition-all duration-300 uppercase tracking-tighter flex items-center justify-center gap-3"
+              >
+                <i className="fas fa-microphone"></i> Talk to AI Agent
+              </button>
+            </div>
           </div>
-          <h1 className="text-6xl lg:text-8xl font-black text-brand-dark tracking-tighter mb-8 leading-[0.9]">
-            SMART SEO.<br />
-            <span className="text-transparent" style={{ WebkitTextStroke: '1px #000' }}>AI SOLUTIONS.</span><br />
-            <span className="bg-brand-green px-2">LOCAL GROWTH.</span>
-          </h1>
-          <p className="text-xl text-gray-600 mb-12 max-w-2xl leading-relaxed">
-            I help local businesses dominate search results and automate growth using custom AI tools and practical SEO strategies.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <button
-              onClick={onCtaClick}
-              className="px-10 py-5 bg-brand-dark text-white rounded-none font-black text-lg hover:bg-brand-green hover:text-brand-dark transition-all duration-300 uppercase tracking-tighter flex items-center justify-center gap-3 group"
-            >
-              Start Your Project
-              <i className="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
-            </button>
-            <button
-              onClick={onToolsClick}
-              className="px-10 py-5 bg-white text-brand-dark border-2 border-brand-dark rounded-none font-black text-lg hover:bg-gray-50 transition-all uppercase tracking-tighter"
-            >
-              View AI Tools
-            </button>
+
+          <div className="lg:col-span-4 hidden lg:block relative">
+             <div className="relative z-10 bg-white border-4 border-brand-dark p-8 shadow-[20px_20px_0px_0px_#BAFF02]">
+                <div className="space-y-8">
+                  <div className="flex justify-between items-end border-b-2 border-gray-100 pb-4">
+                    <div>
+                      <p className="text-4xl font-black text-brand-dark tracking-tighter">98%</p>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">SEO Efficiency</p>
+                    </div>
+                    <i className="fas fa-chart-line text-brand-green text-2xl"></i>
+                  </div>
+                  <div className="flex justify-between items-end border-b-2 border-gray-100 pb-4">
+                    <div>
+                      <p className="text-4xl font-black text-brand-dark tracking-tighter">50+</p>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">AI Modules</p>
+                    </div>
+                    <i className="fas fa-microchip text-brand-green text-2xl"></i>
+                  </div>
+                  <div className="flex justify-between items-end">
+                    <div>
+                      <p className="text-4xl font-black text-brand-dark tracking-tighter">24/7</p>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">AI Automation</p>
+                    </div>
+                    <i className="fas fa-bolt text-brand-green text-2xl"></i>
+                  </div>
+                </div>
+             </div>
           </div>
         </div>
       </div>
