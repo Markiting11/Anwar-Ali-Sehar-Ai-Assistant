@@ -12,7 +12,7 @@ Anwar Ali Sehar's Background:
 - Training: Physical and practical mentorship for beginners to bridge the gap between learning and earning.
 
 Services:
-1. Local SEO Growth: Google Business Profile, Location-based SEO, Lead Gen.
+1. Local SEO Growth: Google Business Profile, Location-based SEO, Off-Page SEO, Lead Gen.
 2. AI-Powered Tools: Educational AI, SEO Automation, Geo Data Extraction, Custom Dashboards.
 3. Training & Mentorship: Practical skills for local market demand.
 

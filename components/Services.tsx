@@ -6,7 +6,7 @@ const Services: React.FC = () => {
     {
       title: "Local SEO Growth",
       icon: "fa-map-location-dot",
-      items: ["Google Business Profile", "Location-based SEO Pages", "On-page & Technical SEO", "Lead Generation Systems"]
+      items: ["Google Business Profile", "Location-based SEO Pages", "Off-Page SEO & Link Building", "On-page & Technical SEO", "Lead Generation Systems"]
     },
     {
       title: "AI-Powered Tools",
