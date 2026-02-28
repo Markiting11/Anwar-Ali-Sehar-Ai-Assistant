@@ -3,12 +3,12 @@ import React from 'react';
 
 const WhyMe: React.FC = () => {
   const reasons = [
-    "Deep understanding of local markets",
-    "Practical, results-driven SEO strategies",
-    "Custom AI tools built for real needs",
-    "Simple, secure, and scalable solutions",
-    "Experience in physical & practical training",
-    "Focus on long-term growth, not shortcuts"
+    "Local business owners seeking real leads",
+    "Entrepreneurs needing custom AI tools",
+    "Students wanting practical income skills",
+    "Organizations needing secure solutions",
+    "Focus on impact, not just hype",
+    "Ground-reality rooted strategies"
   ];
 
   return (

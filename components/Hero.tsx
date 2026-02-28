@@ -24,14 +24,14 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick, onToolsClick }) => {
               Digital Strategy Architect
             </div>
             
-            <h1 className="text-7xl md:text-8xl lg:text-9xl font-black text-brand-dark tracking-tighter mb-8 leading-[0.85] animate-in fade-in slide-in-from-left-8 duration-700">
-              DOMINATE<br />
-              <span className="text-transparent" style={{ WebkitTextStroke: '2px #000' }}>THE WEB.</span><br />
-              <span className="bg-brand-green text-brand-dark px-4 inline-block -rotate-1 transform">WITH AI.</span>
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-brand-dark tracking-tighter mb-8 leading-[0.9] animate-in fade-in slide-in-from-left-8 duration-700 uppercase">
+              Empowering<br />
+              <span className="text-transparent" style={{ WebkitTextStroke: '2px #000' }}>Local Businesses</span><br />
+              <span className="bg-brand-green text-brand-dark px-4 inline-block -rotate-1 transform">With Smart SEO & AI.</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-500 mb-12 max-w-2xl leading-relaxed font-medium">
-              I build custom <span className="text-brand-dark font-bold">AI engines</span> and <span className="text-brand-dark font-bold">Local SEO</span> systems that transform small businesses into market leaders.
+              The Work of <span className="text-brand-dark font-bold">Anwar Ali Sehar</span>. Local businesses don’t fail because they lack effort — they fail because they lack clarity, strategy, and the right tools.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
@@ -59,30 +59,13 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick, onToolsClick }) => {
           </div>
 
           <div className="lg:col-span-4 hidden lg:block relative">
-             <div className="relative z-10 bg-white border-4 border-brand-dark p-8 shadow-[20px_20px_0px_0px_#BAFF02]">
-                <div className="space-y-8">
-                  <div className="flex justify-between items-end border-b-2 border-gray-100 pb-4">
-                    <div>
-                      <p className="text-4xl font-black text-brand-dark tracking-tighter">98%</p>
-                      <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">SEO Efficiency</p>
-                    </div>
-                    <i className="fas fa-chart-line text-brand-green text-2xl"></i>
-                  </div>
-                  <div className="flex justify-between items-end border-b-2 border-gray-100 pb-4">
-                    <div>
-                      <p className="text-4xl font-black text-brand-dark tracking-tighter">50+</p>
-                      <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">AI Modules</p>
-                    </div>
-                    <i className="fas fa-microchip text-brand-green text-2xl"></i>
-                  </div>
-                  <div className="flex justify-between items-end">
-                    <div>
-                      <p className="text-4xl font-black text-brand-dark tracking-tighter">24/7</p>
-                      <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">AI Automation</p>
-                    </div>
-                    <i className="fas fa-bolt text-brand-green text-2xl"></i>
-                  </div>
-                </div>
+             <div className="relative z-10 bg-white border-4 border-brand-dark p-2 shadow-[20px_20px_0px_0px_#BAFF02] overflow-hidden rounded-2xl">
+                <img 
+                  src="https://app.trickle.so/storage/public/images/usr_196e96caa8000001/a295c978-3017-4d2d-a66f-75aadc4fcab6.png" 
+                  alt="Anwar Ali Sehar Strategy" 
+                  className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  referrerPolicy="no-referrer"
+                />
              </div>
           </div>
         </div>

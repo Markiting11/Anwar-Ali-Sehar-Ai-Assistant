@@ -8,32 +8,42 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
           <div className="relative group">
             <div className="aspect-[4/5] bg-brand-dark rounded-2xl overflow-hidden shadow-2xl relative z-10 border-4 border-brand-dark">
-               <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Anwar Ali Sehar" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+               <img 
+                 src="https://xmrkcljfyffeevdfowga.supabase.co/storage/v1/object/public/blog-images/s7zc8h0llq-1771747672251.png" 
+                 alt="Anwar Ali Sehar - Practical Mindset" 
+                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                 referrerPolicy="no-referrer"
+               />
             </div>
             <div className="absolute -bottom-8 -left-8 w-full h-full border-4 border-brand-green rounded-2xl -z-0 group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
             <div className="absolute -top-8 -right-8 bg-brand-green p-8 rounded-2xl shadow-2xl z-20 border-4 border-brand-dark">
-              <p className="text-5xl font-black text-brand-dark leading-none">5+</p>
-              <p className="text-brand-dark text-xs font-black uppercase tracking-[0.2em] mt-2">Years of Mastery</p>
+              <p className="text-5xl font-black text-brand-dark leading-none">AI</p>
+              <p className="text-brand-dark text-[10px] font-black uppercase tracking-[0.2em] mt-2">Driven Growth</p>
             </div>
           </div>
           <div>
-            <h2 className="text-xs font-black text-brand-green uppercase tracking-[0.4em] mb-6">The Architect</h2>
-            <h3 className="text-5xl lg:text-6xl font-black text-brand-dark mb-10 tracking-tighter leading-[1.1]">SEO Expert & AI Strategy Lead</h3>
+            <h2 className="text-xs font-black text-brand-green uppercase tracking-[0.4em] mb-6">A Practical Mindset</h2>
+            <h3 className="text-5xl lg:text-6xl font-black text-brand-dark mb-10 tracking-tighter leading-[1.1]">Not Just Services, Solutions.</h3>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              I’m <span className="font-bold text-brand-dark">Anwar Ali Sehar</span>. I don't just "do" marketing—I engineer digital environments where businesses can't help but grow.
+              Anwar’s approach is rooted in <span className="font-bold text-brand-dark">ground reality</span>. Every strategy starts with one question: <span className="italic">“What problem is this local business actually facing?”</span>
             </p>
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-              Based in Pakistan, I work with global partners to implement <span className="underline decoration-brand-green decoration-8 underline-offset-8 font-black text-brand-dark">data-first Local SEO</span> and bespoke AI tools that eliminate manual grunt work.
+              From visibility issues on Google Maps to lead conversion problems and repetitive manual tasks — solutions are designed to be <span className="underline decoration-brand-green decoration-8 underline-offset-8 font-black text-brand-dark">simple, secure, and scalable</span>.
             </p>
             <div className="grid grid-cols-2 gap-10 pt-10 border-t-4 border-brand-dark">
               <div>
-                <p className="text-2xl font-black text-brand-dark mb-2 uppercase tracking-tighter">No Fluff</p>
-                <p className="text-sm text-gray-500 font-bold leading-relaxed">Direct strategies focused strictly on ROI and conversion metrics.</p>
+                <p className="text-2xl font-black text-brand-dark mb-2 uppercase tracking-tighter">Think Local</p>
+                <p className="text-sm text-gray-500 font-bold leading-relaxed">Identify real local business problems and build smart solutions.</p>
               </div>
               <div>
-                <p className="text-2xl font-black text-brand-dark mb-2 uppercase tracking-tighter">AI Native</p>
-                <p className="text-sm text-gray-500 font-bold leading-relaxed">Leveraging cutting-edge models like Gemini Pro for your edge.</p>
+                <p className="text-2xl font-black text-brand-dark mb-2 uppercase tracking-tighter">Grow Digital</p>
+                <p className="text-sm text-gray-500 font-bold leading-relaxed">Use SEO & AI to automate and scale for long-term growth.</p>
               </div>
+            </div>
+            <div className="mt-12 p-8 bg-brand-dark text-white rounded-2xl border border-white/10">
+              <p className="text-lg italic font-medium text-gray-300">
+                "The future of local business growth lies at the intersection of SEO, AI, and practicality. If you’re ready to grow smarter, automate better, and build digital assets that actually work — this is where the journey begins."
+              </p>
             </div>
           </div>
         </div>

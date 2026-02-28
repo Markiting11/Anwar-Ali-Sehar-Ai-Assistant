@@ -4,19 +4,19 @@ import React from 'react';
 const Services: React.FC = () => {
   const services = [
     {
-      title: "Local SEO & Marketing",
+      title: "Local SEO Growth",
       icon: "fa-map-location-dot",
-      items: ["Google Business Profile", "Local Keyword Research", "On-page & Technical SEO", "Lead Gen Strategies"]
+      items: ["Google Business Profile", "Location-based SEO Pages", "On-page & Technical SEO", "Lead Generation Systems"]
     },
     {
-      title: "AI Tools & Web Apps",
+      title: "AI-Powered Tools",
       icon: "fa-robot",
-      items: ["Custom AI Tools", "AI Dashboards", "Data Automation", "User-friendly Interfaces"]
+      items: ["Educational AI Systems", "SEO Automation Utilities", "Geo Data Extraction", "Custom Operational Dashboards"]
     },
     {
       title: "Training & Mentorship",
       icon: "fa-graduation-cap",
-      items: ["Practical SEO & AI", "Market-focused Learning", "Tool-building Mindset", "Beginner Earning Pathways"]
+      items: ["Local Market Demand Analysis", "Problem-Solving Skills", "Tool-Building Mindset", "Practical Earning Pathways"]
     }
   ];
 
