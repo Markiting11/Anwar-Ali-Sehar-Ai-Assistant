@@ -83,7 +83,7 @@ export const PROJECTS: any[] = [
     title: "King Hair Saloon",
     description: "A modern, stylish website for a hair salon featuring service listings and booking information.",
     link: "https://king-hair-saloon.lovable.app/",
-    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=800",
     category: "Website"
   },
   {
