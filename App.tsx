@@ -5,6 +5,7 @@ import About from './components/About';
 import Services from './components/Services';
 import WhyMe from './components/WhyMe';
 import Portfolio from './components/Portfolio';
+import SEOContent from './components/SEOContent';
 import Contact from './components/Contact';
 import VoiceAssistant from './components/VoiceAssistant';
 
@@ -66,6 +67,7 @@ const App: React.FC = () => {
         <Services />
         <WhyMe />
         <Portfolio />
+        <SEOContent />
         <Contact />
       </main>
 
