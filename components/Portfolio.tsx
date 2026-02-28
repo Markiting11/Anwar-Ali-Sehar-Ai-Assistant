@@ -11,11 +11,11 @@ const Portfolio: React.FC = () => {
     : PROJECTS.filter(p => p.category === filter);
 
   return (
-    <section id="portfolio" className="py-32 bg-white">
+    <section id="portfolio" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
+        <div className="text-center mb-10">
           <h2 className="text-xs font-black text-brand-green uppercase tracking-[0.3em] mb-4">Case Studies</h2>
-          <h3 className="text-5xl font-black text-brand-dark tracking-tighter mb-12">Latest Projects</h3>
+          <h3 className="text-3xl font-black text-brand-dark tracking-tighter mb-6">Latest Projects</h3>
           <div className="flex justify-center gap-3 mt-8 flex-wrap">
             {categories.map(cat => (
               <button
@@ -37,7 +37,7 @@ const Portfolio: React.FC = () => {
           {filteredProjects.map((project, idx) => (
             <div key={idx} className="group cursor-pointer">
               <div className="relative aspect-video overflow-hidden bg-brand-dark rounded-2xl mb-6">
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" />
+                <img src={project.image} alt={project.title} className="w-full h-full object-cover grayscale-0 group-hover:grayscale group-hover:scale-105 transition-all duration-700" />
                 <div className="absolute bottom-6 left-6 flex gap-2">
                    <span className="bg-brand-green text-brand-dark text-[10px] font-black uppercase px-3 py-1 rounded shadow-lg">
                     {project.category}
@@ -62,7 +62,7 @@ const Portfolio: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-32 p-16 bg-brand-green rounded-3xl text-brand-dark relative overflow-hidden">
+        <div className="mt-16 p-12 bg-brand-green rounded-3xl text-brand-dark relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/20 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2"></div>
           <div className="relative z-10 text-center max-w-2xl mx-auto">
             <h3 className="text-4xl font-black mb-6 tracking-tighter leading-tight uppercase">Unlock Your Digital Potential</h3>

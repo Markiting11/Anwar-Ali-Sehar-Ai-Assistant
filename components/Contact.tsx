@@ -2,12 +2,12 @@ import React from 'react';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-32 bg-gray-50">
+    <section id="contact" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h2 className="text-xs font-black text-brand-green uppercase tracking-[0.3em] mb-4">Connect</h2>
-            <h3 className="text-5xl font-black text-brand-dark mb-10 tracking-tighter">Let's Talk Business</h3>
+            <h3 className="text-3xl font-black text-brand-dark mb-6 tracking-tighter">Let's Talk Business</h3>
             <p className="text-lg text-gray-600 mb-12 font-medium leading-relaxed">
               Available for SEO audits, custom AI tool development, and long-term digital growth consulting. 
             </p>

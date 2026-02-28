@@ -12,13 +12,13 @@ const WhyMe: React.FC = () => {
   ];
 
   return (
-    <section className="py-32 bg-brand-dark text-white overflow-hidden relative">
+    <section className="py-16 bg-brand-dark text-white overflow-hidden relative">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-green/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-xs font-black text-brand-green uppercase tracking-[0.3em] mb-6">Value Proposition</h2>
-            <h3 className="text-5xl font-black mb-12 tracking-tighter leading-tight">Why Choose My<br />Strategic Approach?</h3>
+            <h3 className="text-3xl font-black mb-6 tracking-tighter leading-tight">Why Choose My<br />Strategic Approach?</h3>
             <div className="grid grid-cols-1 gap-6">
               {reasons.map((reason, idx) => (
                 <div key={idx} className="flex items-center gap-6 group">

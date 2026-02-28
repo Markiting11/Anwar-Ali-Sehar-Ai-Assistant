@@ -60,7 +60,7 @@ const App: React.FC = () => {
         </div>
       </nav>
 
-      <main className="pt-16">
+      <main className="pt-12">
         <Hero onCtaClick={() => scrollTo('contact')} onToolsClick={() => scrollTo('portfolio')} />
         <About />
         <Services />
@@ -69,7 +69,7 @@ const App: React.FC = () => {
         <Contact />
       </main>
 
-      <footer className="bg-brand-dark text-white py-16">
+      <footer className="bg-brand-dark text-white py-12">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <div className="w-12 h-12 bg-brand-green text-brand-dark rounded mx-auto flex items-center justify-center font-bold text-xl mb-6">A</div>
           <p className="text-2xl font-bold mb-4 tracking-tight">Anwar Ali Sehar</p>

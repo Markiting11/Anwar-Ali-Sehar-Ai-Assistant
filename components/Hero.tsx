@@ -7,7 +7,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onCtaClick, onToolsClick }) => {
   return (
-    <section id="hero" className="relative bg-white py-24 lg:py-40 overflow-hidden min-h-[90vh] flex items-center">
+    <section id="hero" className="relative bg-white py-12 lg:py-16 overflow-hidden min-h-[60vh] flex items-center">
       {/* Background Decor */}
       <div className="absolute inset-0 z-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#000 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
       <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[800px] h-[800px] bg-brand-green/10 rounded-full blur-[160px]"></div>
@@ -16,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick, onToolsClick }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <div className="lg:col-span-8">
-            <div className="inline-flex items-center gap-3 py-2 px-5 bg-brand-dark text-white rounded-full text-xs font-black uppercase tracking-[0.2em] mb-10 shadow-xl shadow-brand-green/10">
+            <div className="inline-flex items-center gap-3 py-2 px-5 bg-brand-dark text-white rounded-full text-xs font-black uppercase tracking-[0.2em] mb-6 shadow-xl shadow-brand-green/10">
               <span className="relative flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-brand-green"></span>
@@ -24,13 +24,13 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick, onToolsClick }) => {
               Digital Strategy Architect
             </div>
             
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-brand-dark tracking-tighter mb-8 leading-[0.9] animate-in fade-in slide-in-from-left-8 duration-700 uppercase">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-brand-dark tracking-tighter mb-4 leading-[0.9] animate-in fade-in slide-in-from-left-8 duration-700 uppercase">
               Empowering<br />
               <span className="text-transparent" style={{ WebkitTextStroke: '2px #000' }}>Local Businesses</span><br />
               <span className="bg-brand-green text-brand-dark px-4 inline-block -rotate-1 transform">With Smart SEO & AI.</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-500 mb-12 max-w-2xl leading-relaxed font-medium">
+            <p className="text-lg md:text-xl text-gray-500 mb-8 max-w-2xl leading-relaxed font-medium">
               The Work of <span className="text-brand-dark font-bold">Anwar Ali Sehar</span>. Local businesses don’t fail because they lack effort — they fail because they lack clarity, strategy, and the right tools.
             </p>
             
@@ -63,7 +63,7 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick, onToolsClick }) => {
                 <img 
                   src="https://app.trickle.so/storage/public/images/usr_196e96caa8000001/a295c978-3017-4d2d-a66f-75aadc4fcab6.png" 
                   alt="Anwar Ali Sehar Strategy" 
-                  className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-auto object-cover grayscale-0 hover:grayscale transition-all duration-700"
                   referrerPolicy="no-referrer"
                 />
              </div>

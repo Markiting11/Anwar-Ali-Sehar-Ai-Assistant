@@ -3,15 +3,15 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-32 bg-gray-50">
+    <section id="about" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative group">
             <div className="aspect-[4/5] bg-brand-dark rounded-2xl overflow-hidden shadow-2xl relative z-10 border-4 border-brand-dark">
                <img 
                  src="https://xmrkcljfyffeevdfowga.supabase.co/storage/v1/object/public/blog-images/s7zc8h0llq-1771747672251.png" 
                  alt="Anwar Ali Sehar - Practical Mindset" 
-                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                 className="w-full h-full object-cover grayscale-0 hover:grayscale transition-all duration-700"
                  referrerPolicy="no-referrer"
                />
             </div>
@@ -23,11 +23,11 @@ const About: React.FC = () => {
           </div>
           <div>
             <h2 className="text-xs font-black text-brand-green uppercase tracking-[0.4em] mb-6">A Practical Mindset</h2>
-            <h3 className="text-5xl lg:text-6xl font-black text-brand-dark mb-10 tracking-tighter leading-[1.1]">Not Just Services, Solutions.</h3>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <h3 className="text-3xl lg:text-4xl font-black text-brand-dark mb-6 tracking-tighter leading-[1.1]">Not Just Services, Solutions.</h3>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               Anwar’s approach is rooted in <span className="font-bold text-brand-dark">ground reality</span>. Every strategy starts with one question: <span className="italic">“What problem is this local business actually facing?”</span>
             </p>
-            <p className="text-xl text-gray-600 mb-10 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               From visibility issues on Google Maps to lead conversion problems and repetitive manual tasks — solutions are designed to be <span className="underline decoration-brand-green decoration-8 underline-offset-8 font-black text-brand-dark">simple, secure, and scalable</span>.
             </p>
             <div className="grid grid-cols-2 gap-10 pt-10 border-t-4 border-brand-dark">

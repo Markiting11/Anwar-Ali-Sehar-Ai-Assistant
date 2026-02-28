@@ -34,7 +34,7 @@ export const PROJECTS: any[] = [
     title: "Mental Health Platform",
     description: "A calming, professional portfolio for clinical psychologists focusing on user trust and easy booking.",
     link: "https://savera-naeem.lovable.app/",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=800",
+    image: "https://xmrkcljfyffeevdfowga.supabase.co/storage/v1/object/public/listing-images/0.26158980576953783.png",
     category: "Website"
   },
   {
