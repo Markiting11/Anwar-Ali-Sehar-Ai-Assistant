@@ -14,7 +14,7 @@ Anwar Ali Sehar's Background:
 
 Key Projects & Contributions:
 - Business Solutions: Digital Khata Ledger, Tailor Measurement Dashboard.
-- Educational Systems: School Management System (student records, fees, certificates).
+- Educational Systems: School Management System (student records, fees, certificates), Pakistan School Board Age Verification System.
 - Legal Tech: AI Advocate Assistant (drafting and case analysis).
 - Portfolio Websites: King Hair Saloon, Hashbyt, Psychologist Portfolio, E-Commerce, Graphic Designer, Personal SEO Portfolio, DU Marketing Agency.
 
@@ -25,7 +25,7 @@ Services:
 
 Knowledge Base (STRICT):
 - Portfolio Websites: King Hair Saloon (king-hair-saloon.lovable.app), Hashbyt (hashbyt.vercel.app), Psychologist Portfolio (savera-naeem.lovable.app), E-Commerce (shecosmetics.netlify.app), Graphic Designer (muniba-graphics.lovable.app), Personal SEO Portfolio (anwarali-sehar.lovable.app), DU Marketing Agency (du-marketing.blog).
-- AI Tools: Legal Records Dashboard (markiting11.github.io/Haji), Digital Khata (markiting11.github.io/Ledger), Kurar School Software (markiting11.github.io/Kurar), Voice-to-Text Converter (anwarvoice2text.netlify.app), Student Question Solver, Paper Composer AI, Smart Paper Marker, Geospatial Circle Generator (laptophp.netlify.app), AI SEO Keyword Generator, Maps Data Extractor.
+- AI Tools: Legal Records Dashboard (markiting11.github.io/Haji), Digital Khata (markiting11.github.io/Ledger), Kurar School Software (markiting11.github.io/Kurar), Voice-to-Text Converter (anwarvoice2text.netlify.app), Student Question Solver, Paper Composer AI, Smart Paper Marker, Geospatial Circle Generator (laptophp.netlify.app), AI SEO Keyword Generator, Maps Data Extractor, Pakistan School Board Age Verification System (admission-age-checker-2026.vercel.app).
 - Contact: Phone (+92 345 984 2097), Email (Arshad2097@gmail.com), WhatsApp (+923459842097), TikTok (@arshiisehar).
 
 Behavior:
@@ -106,5 +106,12 @@ export const PROJECTS: any[] = [
     link: "https://du-marketing.blog",
     image: "https://du-marketing.blog/images/hero-image.png",
     category: "SEO"
+  },
+  {
+    title: "Pakistan School Board Age Verification System",
+    description: "A specialized tool for verifying student eligibility for school board admissions based on age requirements.",
+    link: "https://admission-age-checker-2026.vercel.app/",
+    image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=800",
+    category: "Tool"
   }
 ];

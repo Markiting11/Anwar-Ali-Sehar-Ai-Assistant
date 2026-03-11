@@ -9,7 +9,7 @@ Professional portfolio of Anwar Ali Sehar, a Local SEO & Digital Marketing Speci
 
 ## Key Projects & Contributions
 - Business Solutions: Digital Khata Ledger, Tailor Measurement Dashboard.
-- Educational Systems: School Management System (records, fees, certificates).
+- Educational Systems: School Management System (records, fees, certificates), Pakistan School Board Age Verification System.
 - Legal Tech: AI Advocate Assistant (drafting and case analysis).
 - Portfolio Projects: King Hair Saloon, Hashbyt, Psychologist Portfolio, E-Commerce, Graphic Designer, Personal SEO Portfolio, DU Marketing Agency (du-marketing.blog).
 
@@ -27,6 +27,7 @@ Professional portfolio of Anwar Ali Sehar, a Local SEO & Digital Marketing Speci
 - Geospatial Circle Generator: laptophp.netlify.app
 - AI SEO Keyword Generator
 - Maps Data Extractor
+- Pakistan School Board Age Verification System: admission-age-checker-2026.vercel.app
 
 ## Contact
 - Phone: +92 345 984 2097
