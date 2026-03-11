@@ -2,18 +2,19 @@
 
 Professional portfolio of Anwar Ali Sehar, a Local SEO & Digital Marketing Specialist, AI Tool Builder, and Local Business Growth Mentor.
 
-## Core Expertise
-- Local SEO Growth: Google Business Profile, Location-based SEO, Off-Page SEO, Lead Gen.
-- AI-Powered Tools: Educational AI, SEO Automation, Geo Data Extraction, Custom Dashboards.
-- Training & Mentorship: Practical skills for local market demand.
+## Core Professional Roles
+- SEO & Digital Marketing Specialist: Expert in online visibility and reach.
+- AI Tool Builder: Custom tools integrating LLMs (Gemini, DeepSeek) into web apps.
+- Web Developer: Mobile-responsive dashboards and software (HTML, CSS, JS, Python).
 
-## Portfolio Projects
-- King Hair Saloon: king-hair-saloon.lovable.app
-- Hashbyt: hashbyt.vercel.app
-- Psychologist Portfolio: savera-naeem.lovable.app
-- E-Commerce: shecosmetics.netlify.app
-- Graphic Designer: muniba-graphics.lovable.app
-- Personal SEO Portfolio: anwarali-sehar.lovable.app
+## Key Projects & Contributions
+- Business Solutions: Digital Khata Ledger, Tailor Measurement Dashboard.
+- Educational Systems: School Management System (records, fees, certificates).
+- Legal Tech: AI Advocate Assistant (drafting and case analysis).
+- Portfolio Projects: King Hair Saloon, Hashbyt, Psychologist Portfolio, E-Commerce, Graphic Designer, Personal SEO Portfolio.
+
+## Mentorship & Community
+- Local Business Growth Mentor: Training students and beginners in SEO and digital skills.
 
 ## AI Tools
 - Legal Records Dashboard: markiting11.github.io/Haji

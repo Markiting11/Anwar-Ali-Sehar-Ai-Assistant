@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
+import ProfessionalJourney from './components/ProfessionalJourney';
 import WhyMe from './components/WhyMe';
 import Portfolio from './components/Portfolio';
 import SEOContent from './components/SEOContent';
@@ -65,6 +66,7 @@ const App: React.FC = () => {
         <Hero onCtaClick={() => scrollTo('contact')} onToolsClick={() => scrollTo('portfolio')} />
         <About />
         <Services />
+        <ProfessionalJourney />
         <WhyMe />
         <Portfolio />
         <SEOContent />
