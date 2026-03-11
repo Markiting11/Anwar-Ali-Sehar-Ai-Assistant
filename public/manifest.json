@@ -1,0 +1,16 @@
+{
+  "name": "Anwar Ali Sehar Portfolio",
+  "short_name": "Anwar SEO",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#BAFF02"
+}
