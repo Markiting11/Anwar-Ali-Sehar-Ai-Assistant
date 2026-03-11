@@ -16,7 +16,7 @@ Key Projects & Contributions:
 - Business Solutions: Digital Khata Ledger, Tailor Measurement Dashboard.
 - Educational Systems: School Management System (student records, fees, certificates).
 - Legal Tech: AI Advocate Assistant (drafting and case analysis).
-- Portfolio Websites: King Hair Saloon, Hashbyt, Psychologist Portfolio, E-Commerce, Graphic Designer, Personal SEO Portfolio.
+- Portfolio Websites: King Hair Saloon, Hashbyt, Psychologist Portfolio, E-Commerce, Graphic Designer, Personal SEO Portfolio, DU Marketing Agency.
 
 Services:
 1. Local SEO Growth: Google Business Profile, Location-based SEO, Off-Page SEO, Lead Gen.
@@ -24,7 +24,7 @@ Services:
 3. Training & Mentorship: Practical skills for local market demand.
 
 Knowledge Base (STRICT):
-- Portfolio Websites: King Hair Saloon (king-hair-saloon.lovable.app), Hashbyt (hashbyt.vercel.app), Psychologist Portfolio (savera-naeem.lovable.app), E-Commerce (shecosmetics.netlify.app), Graphic Designer (muniba-graphics.lovable.app), Personal SEO Portfolio (anwarali-sehar.lovable.app).
+- Portfolio Websites: King Hair Saloon (king-hair-saloon.lovable.app), Hashbyt (hashbyt.vercel.app), Psychologist Portfolio (savera-naeem.lovable.app), E-Commerce (shecosmetics.netlify.app), Graphic Designer (muniba-graphics.lovable.app), Personal SEO Portfolio (anwarali-sehar.lovable.app), DU Marketing Agency (du-marketing.blog).
 - AI Tools: Legal Records Dashboard (markiting11.github.io/Haji), Digital Khata (markiting11.github.io/Ledger), Kurar School Software (markiting11.github.io/Kurar), Voice-to-Text Converter (anwarvoice2text.netlify.app), Student Question Solver, Paper Composer AI, Smart Paper Marker, Geospatial Circle Generator (laptophp.netlify.app), AI SEO Keyword Generator, Maps Data Extractor.
 - Contact: Phone (+92 345 984 2097), Email (Arshad2097@gmail.com), WhatsApp (+923459842097), TikTok (@arshiisehar).
 
@@ -99,5 +99,12 @@ export const PROJECTS: any[] = [
     link: "https://markiting11.github.io/Haji/",
     image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800",
     category: "Tool"
+  },
+  {
+    title: "DU Marketing Agency",
+    description: "Comprehensive SEO optimization for a digital marketing agency, delivering significant growth in organic visibility and search rankings.",
+    link: "https://du-marketing.blog",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+    category: "SEO"
   }
 ];
