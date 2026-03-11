@@ -104,7 +104,7 @@ export const PROJECTS: any[] = [
     title: "DU Marketing Agency",
     description: "Comprehensive SEO optimization for a digital marketing agency, delivering significant growth in organic visibility and search rankings.",
     link: "https://du-marketing.blog",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
+    image: "https://du-marketing.blog/images/hero-image.png",
     category: "SEO"
   }
 ];
