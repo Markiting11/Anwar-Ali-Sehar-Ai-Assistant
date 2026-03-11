@@ -81,7 +81,7 @@ const App: React.FC = () => {
           <div className="flex justify-center space-x-8 mb-10">
             <a href="https://web.facebook.com/arshad.ali.7146557" target="_blank" className="text-gray-400 hover:text-brand-green transition-colors"><i className="fab fa-facebook-f text-xl"></i></a>
             <a href="https://www.linkedin.com/in/anwar-sehar" target="_blank" className="text-gray-400 hover:text-brand-green transition-colors"><i className="fab fa-linkedin-in text-xl"></i></a>
-            <a href="https://github.com/Markiting11" target="_blank" className="text-gray-400 hover:text-brand-green transition-colors"><i className="fab fa-github text-xl"></i></a>
+            <a href="https://www.tiktok.com/@arshiisehar" target="_blank" className="text-gray-400 hover:text-brand-green transition-colors"><i className="fab fa-tiktok text-xl"></i></a>
           </div>
           <div className="h-px bg-white/10 w-full mb-8"></div>
           <p className="text-xs text-gray-500 uppercase tracking-widest">© {new Date().getFullYear()} Anwar Ali Sehar. Built for the Future.</p>
