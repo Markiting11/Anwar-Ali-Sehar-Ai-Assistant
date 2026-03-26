@@ -24,14 +24,14 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick, onToolsClick }) => {
               Digital Strategy Architect
             </div>
             
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-brand-dark tracking-tighter mb-6 leading-[1.1] lg:leading-[0.9] animate-in fade-in slide-in-from-left-8 duration-700 uppercase">
-              Empowering <span className="lg:block"></span>
-              <span className="text-transparent lg:block" style={{ WebkitTextStroke: '1.5px #000' }}>Local Businesses</span>
-              <span className="bg-brand-green text-brand-dark px-3 sm:px-4 inline-block -rotate-1 transform mt-2 lg:mt-0">With Smart SEO & AI.</span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-brand-dark tracking-tighter mb-4 leading-[1.1] lg:leading-[0.9] animate-in fade-in slide-in-from-left-8 duration-700 uppercase">
+              Anwar Ali Sehar <span className="lg:block"></span>
+              <span className="text-transparent lg:block" style={{ WebkitTextStroke: '1.5px #000' }}>Local SEO Expert</span>
+              <span className="bg-brand-green text-brand-dark px-3 sm:px-4 inline-block -rotate-1 transform mt-2 lg:mt-0">& Digital Marketer.</span>
             </h1>
             
             <p className="text-base sm:text-lg md:text-xl text-gray-500 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
-              The Work of <span className="text-brand-dark font-bold">Anwar Ali Sehar</span>. Local businesses don’t fail because they lack effort — they fail because they lack clarity, strategy, and the right tools.
+              Empowering local businesses with 7+ years of expertise in <span className="text-brand-dark font-bold underline decoration-brand-green decoration-4">Google Business Profile</span> optimization and AI-powered marketing solutions.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center justify-center lg:justify-start">
