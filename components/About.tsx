@@ -25,11 +25,34 @@ const About: React.FC = () => {
             <h2 className="text-xs font-black text-brand-green uppercase tracking-[0.4em] mb-6">A Practical Mindset</h2>
             <h3 className="text-3xl lg:text-4xl font-black text-brand-dark mb-6 tracking-tighter leading-[1.1]">Not Just Services, Solutions.</h3>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Anwar’s approach is rooted in <span className="font-bold text-brand-dark">ground reality</span>. Every strategy starts with one question: <span className="italic">“What problem is this local business actually facing?”</span>
+              Anwar Ali Sehar is a <span className="font-bold text-brand-dark">Digital Marketing Specialist from Pakistan</span> known for his strong expertise in <span className="text-brand-green font-black">Local SEO and AI-powered web solutions</span>. With over <span className="font-bold text-brand-dark">7 years of experience</span>, he brings a practical, client-focused approach with real-world results.
             </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              From visibility issues on Google Maps to lead conversion problems and repetitive manual tasks — solutions are designed to be <span className="underline decoration-brand-green decoration-8 underline-offset-8 font-black text-brand-dark">simple, secure, and scalable</span>.
-            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+              <div className="space-y-4">
+                <h4 className="text-brand-dark font-black uppercase tracking-widest text-xs flex items-center gap-2">
+                  <span className="w-4 h-[2px] bg-brand-green"></span> Core Expertise
+                </h4>
+                <ul className="space-y-2 text-sm text-gray-600 font-medium">
+                  <li className="flex items-start gap-2"><i className="fas fa-check text-brand-green mt-1"></i> Local SEO (GBP Optimization)</li>
+                  <li className="flex items-start gap-2"><i className="fas fa-check text-brand-green mt-1"></i> Citation Building & Off-Page SEO</li>
+                  <li className="flex items-start gap-2"><i className="fas fa-check text-brand-green mt-1"></i> AI-Powered Websites & Tools</li>
+                  <li className="flex items-start gap-2"><i className="fas fa-check text-brand-green mt-1"></i> Web Apps & Dashboards</li>
+                </ul>
+              </div>
+              <div className="space-y-4">
+                <h4 className="text-brand-dark font-black uppercase tracking-widest text-xs flex items-center gap-2">
+                  <span className="w-4 h-[2px] bg-brand-green"></span> Professional Highlights
+                </h4>
+                <ul className="space-y-2 text-sm text-gray-600 font-medium">
+                  <li className="flex items-start gap-2"><i className="fas fa-star text-brand-green mt-1"></i> Fiverr Level 2 Seller</li>
+                  <li className="flex items-start gap-2"><i className="fas fa-globe text-brand-green mt-1"></i> International Client Base</li>
+                  <li className="flex items-start gap-2"><i className="fas fa-graduation-cap text-brand-green mt-1"></i> Practical Skills Mentor</li>
+                  <li className="flex items-start gap-2"><i className="fas fa-code text-brand-green mt-1"></i> Custom System Architect</li>
+                </ul>
+              </div>
+            </div>
+
             <div className="grid grid-cols-2 gap-10 pt-10 border-t-4 border-brand-dark">
               <div>
                 <p className="text-2xl font-black text-brand-dark mb-2 uppercase tracking-tighter">Think Local</p>
