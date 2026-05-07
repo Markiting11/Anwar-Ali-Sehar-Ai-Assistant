@@ -51,7 +51,7 @@ export const PROJECTS: any[] = [
     title: "Premium Cosmetics Hub",
     description: "High-conversion e-commerce experience with seamless navigation and aesthetic branding.",
     link: "https://shecosmetics.netlify.app/",
-    image: "https://scontent.fisb2-1.fna.fbcdn.net/v/t39.30808-6/577909097_1429396441889581_1607470844643324921_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=106&ccb=1-7&_nc_sid=2a1932&_nc_eui2=AeEs9OrdZ8m8lMccc0jGTyu3-O0iBUOJtPr47SIFQ4m0-lXXZmY9CnnJobjDdUtPZz37jhGB27JYyLxl46iigxoj&_nc_ohc=3COdOZ1kD_EQ7kNvwGymlPP&_nc_oc=AdnFvuv3gxi-JHhBrH90uszx6y-Sov_ZvidhlsSGiY92IRWH4QZJN8dvHXxcKcaxMzg&_nc_zt=23&_nc_ht=scontent.fisb2-1.fna&_nc_gid=US5kiH7P54RZWQfNn_TEkQ&_nc_ss=8&oh=00_AfxE5WFfjvJ3SUqZ11hHlRwDp2vmQXW_oA2EraDKXWpJMQ&oe=69B6E0C2",
+    image: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGoE4dIu3gExBBuAWO6W3ynRUHku_G8r4KHYqPOAbjGdPDO5BpTBMDLor9WEgppbr7R5Zbv-NyuKYLZfHOO6F6qSpTcbpH3UgOyGG3__OKV99HjGymQn2wEEDLkeoMIwDhaL6neL_V8AudL=s1360-w1360-h1020-rw",
     category: "Website"
   },
   {
