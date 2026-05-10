@@ -28,7 +28,7 @@ Services:
 
 Knowledge Base (STRICT):
 - Portfolio Websites: King Hair Saloon (king-hair-saloon.lovable.app), Hashbyt (hashbyt.vercel.app), Psychologist Portfolio (savera-naeem.lovable.app), E-Commerce (shecosmetics.netlify.app), Graphic Designer (muniba-graphics.lovable.app), Personal SEO Portfolio (anwarali-sehar.lovable.app), DU Marketing Agency (du-marketing.blog).
-- AI Tools: Legal Records Dashboard (markiting11.github.io/Haji), Digital Khata (markiting11.github.io/Ledger), Kurar School Software (markiting11.github.io/Kurar), Voice-to-Text Converter (anwarvoice2text.netlify.app), Student Question Solver, Paper Composer AI, Smart Paper Marker, Geospatial Circle Generator (laptophp.netlify.app), AI SEO Keyword Generator, Maps Data Extractor, Pakistan School Board Age Verification System (admission-age-checker-2026.vercel.app).
+- AI Tools: Legal Records Dashboard (markiting11.github.io/Haji), Digital Khata (markiting11.github.io/Ledger), Kurar School Software (markiting11.github.io/Kurar), Voice-to-Text Converter (anwarvoice2text.netlify.app), Student Question Solver, Paper Composer AI, Smart Paper Marker, Geospatial Circle Generator (laptophp.netlify.app), AI SEO Keyword Generator, Maps Data Extractor, Pakistan School Board Age Verification System (admission-age-checker-2026.vercel.app), Lawyer AI Assistant (lawyer-ai-assistant.vercel.app).
 - Contact: Phone (+92 345 984 2097), Email (Arshad2097@gmail.com), WhatsApp (+923459842097), TikTok (@arshiisehar).
 
 Behavior:
@@ -115,6 +115,13 @@ export const PROJECTS: any[] = [
     description: "A specialized tool for verifying student eligibility for school board admissions based on age requirements.",
     link: "https://admission-age-checker-2026.vercel.app/",
     image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=800",
+    category: "Tool"
+  },
+  {
+    title: "Lawyer AI Assistant",
+    description: "An advanced AI assistant for lawyers and advocates, designed to streamline case understanding, legal drafting, and preparation.",
+    link: "https://lawyer-ai-assistant.vercel.app/",
+    image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=800",
     category: "Tool"
   }
 ];

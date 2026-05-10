@@ -1,6 +1,6 @@
 # Anwar Ali Sehar – Local SEO Expert & Digital Marketing Specialist
 
-Last Updated: April 1, 2026
+Last Updated: May 10, 2026
 
 Professional portfolio of Anwar Ali Sehar, a Local SEO Expert & Digital Marketing Specialist from Pakistan.
 
@@ -33,6 +33,7 @@ Professional portfolio of Anwar Ali Sehar, a Local SEO Expert & Digital Marketin
 - AI SEO Keyword Generator
 - Maps Data Extractor
 - Pakistan School Board Age Verification System: admission-age-checker-2026.vercel.app
+- Lawyer AI Assistant: lawyer-ai-assistant.vercel.app
 
 ## Contact
 - Phone: +92 345 984 2097
