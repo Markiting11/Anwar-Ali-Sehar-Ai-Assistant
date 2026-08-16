@@ -27,7 +27,7 @@ Services:
 3. Training & Mentorship: Practical skills for local market demand.
 
 Knowledge Base (STRICT):
-- Portfolio Websites: King Hair Saloon (king-hair-saloon.lovable.app), Hashbyt (hashbyt.vercel.app), Psychologist Portfolio (savera-naeem.lovable.app), E-Commerce (shecosmetics.netlify.app), Graphic Designer (muniba-graphics.lovable.app), Personal SEO Portfolio (anwarali-sehar.lovable.app), DU Marketing Agency (du-marketing.blog), Dastoor Marriage Hall (dastoor-marriage.vercel.app), Daawat-e-Khaas Restaurant (dawat-e-khaas.vercel.app).
+- Portfolio Websites: King Hair Saloon (king-hair-saloon.lovable.app), Hashbyt (hashbyt.vercel.app), Psychologist Portfolio (savera-naeem.lovable.app), E-Commerce (shecosmetics.netlify.app), Graphic Designer (muniba-graphics.lovable.app), Personal SEO Portfolio (anwarali-sehar.lovable.app), DU Marketing Agency (du-marketing.blog), Dastoor Marriage Hall (dastoor-marriage.vercel.app), Daawat-e-Khaas Restaurant (dawat-e-khaas.vercel.app), Solar Scape Nigeria (solarscapenigeria.com), Bespoke Luxury Beds (bespoke-furniture-five.vercel.app).
 - AI Tools: Legal Records Dashboard (markiting11.github.io/Haji), Digital Khata (markiting11.github.io/Ledger), Kurar School Software (markiting11.github.io/Kurar), Voice-to-Text Converter (anwarvoice2text.netlify.app), Student Question Solver, Paper Composer AI, Smart Paper Marker, Geospatial Circle Generator (laptophp.netlify.app), AI SEO Keyword Generator, Maps Data Extractor, Pakistan School Board Age Verification System (admission-age-checker-2026.vercel.app), Lawyer AI Assistant (lawyer-ai-assistant.vercel.app).
 - Contact: Phone (+92 345 984 2097), Email (Arshad2097@gmail.com), WhatsApp (+923459842097), TikTok (@arshiisehar).
 
@@ -136,6 +136,20 @@ export const PROJECTS: any[] = [
     description: "A premium restaurant and dining platform featuring menu showcases, culinary highlights, and online table reservations.",
     link: "https://dawat-e-khaas.vercel.app/",
     image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800",
+    category: "Website"
+  },
+  {
+    title: "Solar Scape Nigeria Ltd",
+    description: "Certified architectural window film installations across Lagos, Abuja, Port Harcourt, and nationwide. Engineered with genuine USA Madico nano-ceramic and security laminates.",
+    link: "https://www.solarscapenigeria.com",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800",
+    category: "Website"
+  },
+  {
+    title: "Bespoke Luxury Beds",
+    description: "Bespoke luxury ottoman beds and frames tailored to your bedroom down to the exact inch, featuring premium velvets, bouclé fabrics, and custom headboards.",
+    link: "https://bespoke-furniture-five.vercel.app",
+    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=800",
     category: "Website"
   }
 ];
