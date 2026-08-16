@@ -27,7 +27,7 @@ Services:
 3. Training & Mentorship: Practical skills for local market demand.
 
 Knowledge Base (STRICT):
-- Portfolio Websites: King Hair Saloon (king-hair-saloon.lovable.app), Hashbyt (hashbyt.vercel.app), Psychologist Portfolio (savera-naeem.lovable.app), E-Commerce (shecosmetics.netlify.app), Graphic Designer (muniba-graphics.lovable.app), Personal SEO Portfolio (anwarali-sehar.lovable.app), DU Marketing Agency (du-marketing.blog).
+- Portfolio Websites: King Hair Saloon (king-hair-saloon.lovable.app), Hashbyt (hashbyt.vercel.app), Psychologist Portfolio (savera-naeem.lovable.app), E-Commerce (shecosmetics.netlify.app), Graphic Designer (muniba-graphics.lovable.app), Personal SEO Portfolio (anwarali-sehar.lovable.app), DU Marketing Agency (du-marketing.blog), Dastoor Marriage Hall (dastoor-marriage.vercel.app), Daawat-e-Khaas Restaurant (dawat-e-khaas.vercel.app).
 - AI Tools: Legal Records Dashboard (markiting11.github.io/Haji), Digital Khata (markiting11.github.io/Ledger), Kurar School Software (markiting11.github.io/Kurar), Voice-to-Text Converter (anwarvoice2text.netlify.app), Student Question Solver, Paper Composer AI, Smart Paper Marker, Geospatial Circle Generator (laptophp.netlify.app), AI SEO Keyword Generator, Maps Data Extractor, Pakistan School Board Age Verification System (admission-age-checker-2026.vercel.app), Lawyer AI Assistant (lawyer-ai-assistant.vercel.app).
 - Contact: Phone (+92 345 984 2097), Email (Arshad2097@gmail.com), WhatsApp (+923459842097), TikTok (@arshiisehar).
 
@@ -51,7 +51,7 @@ export const PROJECTS: any[] = [
     title: "Premium Cosmetics Hub",
     description: "High-conversion e-commerce experience with seamless navigation and aesthetic branding.",
     link: "https://shecosmetics.netlify.app/",
-    image: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGoE4dIu3gExBBuAWO6W3ynRUHku_G8r4KHYqPOAbjGdPDO5BpTBMDLor9WEgppbr7R5Zbv-NyuKYLZfHOO6F6qSpTcbpH3UgOyGG3__OKV99HjGymQn2wEEDLkeoMIwDhaL6neL_V8AudL=s1360-w1360-h1020-rw",
+    image: "https://cdn.ailandingpage.ai/landingpage_io/user_generate/22396691-bd8b-4beb-8cf8-eb3eb00637c4/22396691-bd8b-4beb-8cf8-eb3eb00637c4/product-1/0627c5b34a_0.png",
     category: "Website"
   },
   {
@@ -107,7 +107,7 @@ export const PROJECTS: any[] = [
     title: "DU Marketing Agency",
     description: "Comprehensive SEO optimization for a digital marketing agency, delivering significant growth in organic visibility and search rankings.",
     link: "https://du-marketing.blog",
-    image: "https://du-marketing.blog/images/hero-image.png",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
     category: "SEO"
   },
   {
@@ -123,5 +123,19 @@ export const PROJECTS: any[] = [
     link: "https://lawyer-ai-assistant.vercel.app/",
     image: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&q=80&w=800",
     category: "Tool"
+  },
+  {
+    title: "Dastoor Marriage Hall",
+    description: "An elegant event management and marriage hall booking website with hall features, event packages, and booking inquiries.",
+    link: "https://dastoor-marriage.vercel.app/",
+    image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=800",
+    category: "Website"
+  },
+  {
+    title: "Daawat-e-Khaas Restaurant",
+    description: "A premium restaurant and dining platform featuring menu showcases, culinary highlights, and online table reservations.",
+    link: "https://dawat-e-khaas.vercel.app/",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800",
+    category: "Website"
   }
 ];
