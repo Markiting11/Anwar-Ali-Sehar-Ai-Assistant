@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
             <h2 className="text-xs font-black text-brand-green uppercase tracking-[0.3em] mb-4">Connect</h2>
             <h3 className="text-3xl font-black text-brand-dark mb-6 tracking-tighter">Let's Talk Business</h3>
             <p className="text-lg text-gray-600 mb-12 font-medium leading-relaxed">
-              Available for SEO audits, custom AI tool development, and long-term digital growth consulting. 
+              Available for Local SEO audits, Rank & Rent partnerships, Pay Per Call lead inquiries, and custom AI tool development. 
             </p>
             <div className="space-y-8">
               <div className="flex items-center gap-6 group">
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div className="space-y-2">
                   <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Project Concept</label>
-                  <input name="subject" type="text" className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-100 focus:border-brand-green outline-none transition-colors text-brand-dark font-bold" placeholder="e.g. Local SEO Growth" />
+                  <input name="subject" type="text" className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-100 focus:border-brand-green outline-none transition-colors text-brand-dark font-bold" placeholder="e.g. Rank & Rent Lead Gen / Local SEO" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Details</label>

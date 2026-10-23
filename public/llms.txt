@@ -1,16 +1,27 @@
 # Anwar Ali Sehar – Local SEO Expert & Digital Marketing Specialist
 
-Last Updated: August 16, 2026
+Last Updated: October 23, 2026
 
 Professional portfolio of Anwar Ali Sehar, a Local SEO Expert & Digital Marketing Specialist from Pakistan.
 
-## Core Professional Roles
-- Local SEO Expert & Digital Marketing Specialist: From Pakistan, known for strong expertise in Local SEO and AI-powered web solutions.
+## Core Professional Roles & Services
+- Local SEO Expert & Digital Marketing Specialist: From Pakistan, known for strong expertise in Local SEO, Rank & Rent SEO, and AI-powered web solutions.
 - Experience: Over 7 years in digital marketing with a practical, client-focused approach and real-world results.
-- Core Expertise: Local SEO (Google Business Profile optimization), Citation building & off-page SEO, AI-powered websites and custom tools, Web apps and dashboards.
+- Core Expertise:
+  - Local SEO (Google Business Profile optimization)
+  - Rank & Rent SEO (Building digital real estate, ranking local service sites, and routing exclusive leads)
+  - Pay Per Call Lead Generation (Businesses pay only for verified, high-intent phone inquiries)
+  - Citation building & off-page SEO
+  - AI-powered websites, custom dashboards, and workflow automation
 - Freelancing: Active on platforms like Fiverr (Level 2 Seller), working with international clients on SEO and automation projects.
-- Training & Education: Helps students learn practical digital skills with a focus on earning through freelancing and local markets.
-- Strengths: Combines SEO + AI (a rare and valuable mix), builds custom systems instead of just using ready-made tools, strong understanding of local business ranking strategies.
+- Training & Education: Helps aspiring marketers, freelancers, and entrepreneurs learn practical digital skills, including the Rank & Rent business model.
+- Strengths: Combines SEO + AI, builds custom systems instead of just using ready-made tools, strong understanding of local business ranking strategies.
+
+## Rank & Rent SEO Business Model
+- What Is Rank & Rent?: A digital marketing business model where you build and rank a website for a local service niche, generate qualified leads, and partner with local businesses through a Pay Per Call or lead generation arrangement.
+- How It Works: 1) Identify a profitable local niche, 2) Build an SEO-optimized website, 3) Rank on Google Search and Map Pack, 4) Partner with a suitable local company, 5) Route qualified calls that convert into customers.
+- Pay Per Call: Businesses pay only for qualified calls, eliminating upfront marketing risk and delivering 100% exclusive buyer-intent leads.
+- Learn Rank & Rent With Anwar: Mentorship covering niche validation, site building, local SEO, GBP synergy, and deal structuring.
 
 ## Key Projects & Contributions
 - Business Solutions: Digital Khata Ledger, Tailor Measurement Dashboard.
@@ -19,7 +30,7 @@ Professional portfolio of Anwar Ali Sehar, a Local SEO Expert & Digital Marketin
 - Portfolio Projects: King Hair Saloon, Hashbyt, Psychologist Portfolio, E-Commerce, Graphic Designer, Personal SEO Portfolio, DU Marketing Agency (du-marketing.blog), Dastoor Marriage Hall (dastoor-marriage.vercel.app), Daawat-e-Khaas Restaurant (dawat-e-khaas.vercel.app), Solar Scape Nigeria (solarscapenigeria.com), Bespoke Luxury Beds (bespoke-furniture-five.vercel.app).
 
 ## Mentorship & Community
-- Local Business Growth Mentor: Training students and beginners in SEO and digital skills.
+- Local Business Growth Mentor: Training students and beginners in SEO, digital skills, and Rank & Rent digital real estate.
 
 ## AI Tools
 - Legal Records Dashboard: markiting11.github.io/Haji

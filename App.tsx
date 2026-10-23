@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
+import RankAndRent from './components/RankAndRent';
 import ProfessionalJourney from './components/ProfessionalJourney';
 import WhyMe from './components/WhyMe';
 import Portfolio from './components/Portfolio';
@@ -13,9 +14,17 @@ import VoiceAssistant from './components/VoiceAssistant';
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState('hero');
 
+  const navItems = [
+    { label: 'About', id: 'about' },
+    { label: 'Services', id: 'services' },
+    { label: 'Rank & Rent', id: 'rank-and-rent' },
+    { label: 'Portfolio', id: 'portfolio' },
+    { label: 'Contact', id: 'contact' }
+  ];
+
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['hero', 'about', 'services', 'portfolio', 'contact'];
+      const sections = ['hero', 'about', 'services', 'rank-and-rent', 'portfolio', 'contact'];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -35,6 +44,11 @@ const App: React.FC = () => {
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const openAssistant = () => {
+    const btn = document.querySelector('[class*="bottom-6"] button');
+    if (btn instanceof HTMLElement) btn.click();
+  };
+
   return (
     <div className="min-h-screen font-sans selection:bg-brand-green selection:text-brand-dark">
       {/* Navigation */}
@@ -45,16 +59,16 @@ const App: React.FC = () => {
               <div className="w-8 h-8 bg-brand-dark rounded flex items-center justify-center text-brand-green font-bold">A</div>
               <span className="text-xl font-bold text-brand-dark hidden sm:block tracking-tight">ANWAR ALI SEHAR</span>
             </div>
-            <div className="flex space-x-4 md:space-x-8">
-              {['About', 'Services', 'Portfolio', 'Contact'].map((item) => (
+            <div className="flex space-x-3 sm:space-x-5 md:space-x-8">
+              {navItems.map((item) => (
                 <button
-                  key={item}
-                  onClick={() => scrollTo(item.toLowerCase())}
-                  className={`text-xs font-bold uppercase tracking-widest transition-colors ${
-                    activeSection === item.toLowerCase() ? 'text-brand-dark border-b-2 border-brand-green' : 'text-gray-400 hover:text-brand-dark'
+                  key={item.id}
+                  onClick={() => scrollTo(item.id)}
+                  className={`text-xs font-bold uppercase tracking-wider transition-colors ${
+                    activeSection === item.id ? 'text-brand-dark border-b-2 border-brand-green' : 'text-gray-400 hover:text-brand-dark'
                   }`}
                 >
-                  {item}
+                  {item.label}
                 </button>
               ))}
             </div>
@@ -66,6 +80,7 @@ const App: React.FC = () => {
         <Hero onCtaClick={() => scrollTo('contact')} onToolsClick={() => scrollTo('portfolio')} />
         <About />
         <Services />
+        <RankAndRent onCtaClick={() => scrollTo('contact')} onAssistantClick={openAssistant} />
         <ProfessionalJourney />
         <WhyMe />
         <Portfolio />
