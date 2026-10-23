@@ -13,6 +13,7 @@ import VoiceAssistant from './components/VoiceAssistant';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState('hero');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
     { label: 'About', id: 'about' },
@@ -52,28 +53,110 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen font-sans selection:bg-brand-green selection:text-brand-dark">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
+      <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
-            <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollTo('hero')}>
-              <div className="w-8 h-8 bg-brand-dark rounded flex items-center justify-center text-brand-green font-bold">A</div>
-              <span className="text-xl font-bold text-brand-dark hidden sm:block tracking-tight">ANWAR ALI SEHAR</span>
+            {/* Brand Logo & Name */}
+            <div
+              className="flex items-center gap-2.5 cursor-pointer select-none"
+              onClick={() => {
+                scrollTo('hero');
+                setMobileMenuOpen(false);
+              }}
+            >
+              <div className="w-8 h-8 bg-brand-dark rounded-lg flex items-center justify-center text-brand-green font-black shadow-sm">
+                A
+              </div>
+              <span className="text-sm sm:text-base md:text-xl font-black text-brand-dark tracking-tight">
+                ANWAR ALI SEHAR
+              </span>
             </div>
-            <div className="flex space-x-3 sm:space-x-5 md:space-x-8">
+
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex space-x-6 lg:space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.id}
                   onClick={() => scrollTo(item.id)}
-                  className={`text-xs font-bold uppercase tracking-wider transition-colors ${
-                    activeSection === item.id ? 'text-brand-dark border-b-2 border-brand-green' : 'text-gray-400 hover:text-brand-dark'
+                  className={`text-xs font-bold uppercase tracking-wider transition-colors pb-1 ${
+                    activeSection === item.id
+                      ? 'text-brand-dark border-b-2 border-brand-green'
+                      : 'text-gray-400 hover:text-brand-dark'
                   }`}
                 >
                   {item.label}
                 </button>
               ))}
             </div>
+
+            {/* Mobile Hamburger Toggle Button */}
+            <div className="flex md:hidden items-center">
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="w-10 h-10 rounded-xl bg-gray-50 border border-gray-200 text-brand-dark flex items-center justify-center hover:bg-brand-green hover:border-brand-dark transition-colors focus:outline-none"
+                aria-label={mobileMenuOpen ? 'Close Navigation Menu' : 'Open Navigation Menu'}
+              >
+                <i className={`fas ${mobileMenuOpen ? 'fa-xmark' : 'fa-bars'} text-base`}></i>
+              </button>
+            </div>
           </div>
         </div>
+
+        {/* Mobile Dropdown Drawer */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-gray-100 bg-white/98 backdrop-blur-xl px-4 pt-3 pb-6 space-y-1.5 shadow-2xl">
+            {navItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => {
+                  scrollTo(item.id);
+                  setMobileMenuOpen(false);
+                }}
+                className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-left text-xs font-black uppercase tracking-wider transition-all ${
+                  activeSection === item.id
+                    ? 'bg-brand-dark text-brand-green'
+                    : 'text-gray-600 hover:bg-gray-100 hover:text-brand-dark'
+                }`}
+              >
+                <span className="flex items-center gap-2.5">
+                  <span
+                    className={`w-1.5 h-1.5 rounded-full ${
+                      activeSection === item.id ? 'bg-brand-green' : 'bg-transparent'
+                    }`}
+                  ></span>
+                  {item.label}
+                </span>
+                {item.id === 'rank-and-rent' && (
+                  <span className="px-2 py-0.5 rounded text-[9px] font-black uppercase bg-brand-green text-brand-dark">
+                    Lead Gen
+                  </span>
+                )}
+              </button>
+            ))}
+
+            <div className="pt-3 mt-2 border-t border-gray-100 grid grid-cols-2 gap-2">
+              <button
+                onClick={() => {
+                  openAssistant();
+                  setMobileMenuOpen(false);
+                }}
+                className="w-full py-2.5 px-3 bg-brand-green text-brand-dark border-2 border-brand-dark rounded-xl text-[11px] font-black uppercase tracking-wider flex items-center justify-center gap-1.5 hover:bg-brand-dark hover:text-white transition-colors"
+              >
+                <i className="fas fa-microphone"></i> AI Agent
+              </button>
+              <button
+                onClick={() => {
+                  scrollTo('contact');
+                  setMobileMenuOpen(false);
+                }}
+                className="w-full py-2.5 px-3 bg-brand-dark text-white rounded-xl text-[11px] font-black uppercase tracking-wider flex items-center justify-center gap-1.5 hover:bg-brand-green hover:text-brand-dark transition-colors"
+              >
+                Contact
+              </button>
+            </div>
+          </div>
+        )}
       </nav>
 
       <main className="pt-12">
