@@ -219,7 +219,7 @@ const RankAndRent: React.FC<RankAndRentProps> = ({ onCtaClick, onAssistantClick 
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {payPerCallBenefits.map((benefit, i) => (
               <div key={i} className="bg-brand-gray p-6 rounded-2xl border border-white/10 hover:border-brand-green transition-colors">
                 <div className="w-12 h-12 rounded-xl bg-brand-green text-brand-dark flex items-center justify-center font-black mb-5">
@@ -229,6 +229,30 @@ const RankAndRent: React.FC<RankAndRentProps> = ({ onCtaClick, onAssistantClick 
                 <p className="text-xs text-gray-400 font-medium leading-relaxed">{benefit.desc}</p>
               </div>
             ))}
+          </div>
+
+          {/* Lead Smart Example Callout */}
+          <div className="bg-brand-gray/90 border border-white/10 p-6 rounded-2xl mb-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div className="flex items-start gap-4">
+              <div className="w-10 h-10 rounded-xl bg-brand-green/20 text-brand-green border border-brand-green/30 flex items-center justify-center font-bold text-base flex-shrink-0 mt-1 md:mt-0">
+                <i className="fas fa-network-wired"></i>
+              </div>
+              <div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-brand-green">Monetization Platform Example</span>
+                <h5 className="text-base font-bold text-white mb-1">Connecting With Platforms Like Lead Smart</h5>
+                <p className="text-xs text-gray-300 leading-relaxed max-w-2xl">
+                  Qualified calls can also be monetized through established Pay Per Call lead-generation platforms such as <a href="https://leadsmartinc.com" target="_blank" rel="noopener noreferrer" className="text-brand-green font-bold underline hover:text-white transition-colors">Lead Smart</a>, which connect high-intent inbound search calls directly with suitable local businesses (subject to platform approval and network requirements).
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://leadsmartinc.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-xl text-xs font-black uppercase tracking-wider flex items-center gap-2 flex-shrink-0 transition-colors"
+            >
+              Visit Lead Smart <i className="fas fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
           </div>
 
           <div className="bg-white/5 border border-white/10 p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6">
@@ -247,6 +271,64 @@ const RankAndRent: React.FC<RankAndRentProps> = ({ onCtaClick, onAssistantClick 
             >
               Partner on Pay Per Call
             </button>
+          </div>
+        </div>
+
+        {/* Real-World Case Study / Live Project Spotlight */}
+        <div className="mb-20">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <div className="inline-flex items-center gap-2 py-1 px-3 bg-brand-dark text-brand-green rounded-full text-[10px] font-black uppercase tracking-widest mb-3">
+              <span className="w-2 h-2 rounded-full bg-brand-green animate-ping"></span> Live Project Spotlight
+            </div>
+            <h3 className="text-3xl font-black text-brand-dark uppercase tracking-tight">Active Rank & Rent Asset</h3>
+            <p className="text-gray-500 font-medium text-xs sm:text-sm mt-1">Real-world implementation in the high-ticket residential roofing niche.</p>
+          </div>
+
+          <div className="bg-white rounded-3xl border-2 border-brand-dark p-6 sm:p-8 lg:p-10 shadow-[10px_10px_0px_0px_#000] max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+              <div className="md:col-span-5 relative aspect-video md:aspect-[4/3] rounded-2xl overflow-hidden bg-brand-dark border-2 border-brand-dark">
+                <img 
+                  src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&q=80&w=800" 
+                  alt="Cypress Roof Pros" 
+                  className="w-full h-full object-cover grayscale-0 hover:scale-105 transition-transform duration-500" 
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-brand-green text-brand-dark text-[10px] font-black uppercase px-3 py-1 rounded-md shadow-md">
+                    Live Project
+                  </span>
+                </div>
+              </div>
+
+              <div className="md:col-span-7 flex flex-col justify-between">
+                <div>
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <span className="text-[10px] font-black uppercase tracking-wider text-gray-400">Residential Roofing • Texas</span>
+                    <span className="text-gray-300">•</span>
+                    <span className="text-[10px] font-bold text-brand-dark bg-brand-green/40 px-2 py-0.5 rounded">Partnered with Lead Smart</span>
+                  </div>
+                  <h4 className="text-2xl sm:text-3xl font-black text-brand-dark uppercase tracking-tight mb-3">
+                    Cypress Roof Pros
+                  </h4>
+                  <p className="text-sm text-gray-600 font-medium leading-relaxed mb-6">
+                    A dedicated Rank & Rent local lead-generation project engineered for residential roofing in Cypress, Texas. Built with localized schema, fast mobile load times, and conversion architecture to route qualified homeowner calls directly through <a href="https://leadsmartinc.com" target="_blank" rel="noopener noreferrer" className="text-brand-dark font-bold underline hover:text-brand-green transition-colors">Lead Smart</a> to licensed roofing contractors.
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-4 pt-4 border-t border-gray-100">
+                  <a 
+                    href="https://www.cypressroofpros.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="px-6 py-3 bg-brand-dark text-white font-black text-xs uppercase tracking-wider hover:bg-brand-green hover:text-brand-dark transition-colors flex items-center gap-2"
+                  >
+                    Visit Cypress Roof Pros <i className="fas fa-arrow-up-right-from-square text-[10px]"></i>
+                  </a>
+                  <span className="text-xs text-gray-400 font-medium italic">
+                    cypressroofpros.com
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

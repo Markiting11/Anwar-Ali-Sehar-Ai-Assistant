@@ -19,21 +19,22 @@ Key Projects & Contributions:
 - Business Solutions: Digital Khata Ledger, Tailor Measurement Dashboard.
 - Educational Systems: School Management System (student records, fees, certificates), Pakistan School Board Age Verification System.
 - Legal Tech: AI Advocate Assistant (drafting and case analysis).
-- Portfolio Websites: King Hair Saloon, Hashbyt, Psychologist Portfolio, E-Commerce, Graphic Designer, Personal SEO Portfolio, DU Marketing Agency, Dastoor Marriage Hall, Daawat-e-Khaas Restaurant, Solar Scape Nigeria, Bespoke Luxury Beds.
+- Portfolio Websites & Assets: King Hair Saloon, Hashbyt, Psychologist Portfolio, E-Commerce, Graphic Designer, Personal SEO Portfolio, DU Marketing Agency, Dastoor Marriage Hall, Daawat-e-Khaas Restaurant, Solar Scape Nigeria, Bespoke Luxury Beds, Cypress Roof Pros (Live Rank & Rent project).
 
 Services:
 1. Local SEO Growth: Google Business Profile, Location-based SEO Pages, Off-Page SEO, Lead Gen Systems.
 2. Rank & Rent SEO & Pay Per Call:
    - What it is: A digital marketing business model where Anwar builds and ranks a website for a local service niche, generates qualified leads, and rents the asset or sells the calls to local businesses.
-   - How it works: 1) Identify a profitable local niche (e.g. plumbing, roofing, contractors), 2) Build an SEO-optimized website, 3) Rank it on Google Search and Map Packs, 4) Partner with a vetted local business, 5) Route qualified calls that turn into customers.
-   - Pay Per Call Model: Businesses pay exclusively for qualified calls meeting minimum duration criteria. Zero wasted ad spend, 100% exclusive inquiries, full call tracking transparency.
+   - How it works: 1) Identify a profitable local niche (e.g. roofing, plumbing, contractors), 2) Build an SEO-optimized website, 3) Rank it on Google Search and Map Packs, 4) Partner with a vetted local business or platforms like Lead Smart (leadsmartinc.com), 5) Route qualified calls that turn into paying customers.
+   - Live Case Study: Cypress Roof Pros (www.cypressroofpros.com) — a residential roofing Rank & Rent asset in Cypress, Texas partnered with Lead Smart to monetize inbound homeowner calls.
+   - Pay Per Call Model: Businesses pay exclusively for qualified calls meeting minimum duration criteria. Zero wasted ad spend, 100% exclusive inquiries, full call tracking transparency. Qualified calls can be monetized through platforms like Lead Smart (subject to approval and requirements).
    - Mentorship & Guidance: Anwar mentors aspiring digital marketers, freelancers, and entrepreneurs to master Rank & Rent step-by-step (niche validation, site architecture, ranking, and pay-per-call deal negotiation) with realistic, practical skills and no false income guarantees.
 3. AI-Powered Tools: Educational AI, SEO Automation, Geo Data Extraction, Custom Dashboards.
 4. Training & Mentorship: Practical skills for local market demand.
 
 Knowledge Base (STRICT):
 - Services: Local SEO, Rank & Rent SEO, Pay Per Call Lead Generation, AI Utilities, Mentorship.
-- Portfolio Websites: King Hair Saloon (king-hair-saloon.lovable.app), Hashbyt (hashbyt.vercel.app), Psychologist Portfolio (savera-naeem.lovable.app), E-Commerce (shecosmetics.netlify.app), Graphic Designer (muniba-graphics.lovable.app), Personal SEO Portfolio (anwarali-sehar.lovable.app), DU Marketing Agency (du-marketing.blog), Dastoor Marriage Hall (dastoor-marriage.vercel.app), Daawat-e-Khaas Restaurant (dawat-e-khaas.vercel.app), Solar Scape Nigeria (solarscapenigeria.com), Bespoke Luxury Beds (bespoke-furniture-five.vercel.app).
+- Portfolio Websites & Assets: King Hair Saloon (king-hair-saloon.lovable.app), Hashbyt (hashbyt.vercel.app), Psychologist Portfolio (savera-naeem.lovable.app), E-Commerce (shecosmetics.netlify.app), Graphic Designer (muniba-graphics.lovable.app), Personal SEO Portfolio (anwarali-sehar.lovable.app), DU Marketing Agency (du-marketing.blog), Dastoor Marriage Hall (dastoor-marriage.vercel.app), Daawat-e-Khaas Restaurant (dawat-e-khaas.vercel.app), Solar Scape Nigeria (solarscapenigeria.com), Bespoke Luxury Beds (bespoke-furniture-five.vercel.app), Cypress Roof Pros (cypressroofpros.com - Rank & Rent with Lead Smart).
 - AI Tools: Legal Records Dashboard (markiting11.github.io/Haji), Digital Khata (markiting11.github.io/Ledger), Kurar School Software (markiting11.github.io/Kurar), Voice-to-Text Converter (anwarvoice2text.netlify.app), Student Question Solver, Paper Composer AI, Smart Paper Marker, Geospatial Circle Generator (laptophp.netlify.app), AI SEO Keyword Generator, Maps Data Extractor, Pakistan School Board Age Verification System (admission-age-checker-2026.vercel.app), Lawyer AI Assistant (lawyer-ai-assistant.vercel.app).
 - Contact: Phone (+92 345 984 2097), Email (Arshad2097@gmail.com), WhatsApp (+923459842097), TikTok (@arshiisehar).
 
@@ -158,5 +159,12 @@ export const PROJECTS: any[] = [
     link: "https://bespoke-furniture-five.vercel.app",
     image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=800",
     category: "Website"
+  },
+  {
+    title: "Cypress Roof Pros",
+    description: "Live Rank & Rent local lead-generation project in the residential roofing niche, engineered to capture high-intent search traffic and monetize qualified homeowner calls via Lead Smart.",
+    link: "https://www.cypressroofpros.com",
+    image: "https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&q=80&w=800",
+    category: "Rank & Rent"
   }
 ];

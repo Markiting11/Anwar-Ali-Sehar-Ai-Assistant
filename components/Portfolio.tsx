@@ -4,7 +4,7 @@ import { PROJECTS } from '../constants';
 
 const Portfolio: React.FC = () => {
   const [filter, setFilter] = useState('All');
-  const categories = ['All', 'Website', 'Tool', 'SEO'];
+  const categories = ['All', 'Website', 'Tool', 'SEO', 'Rank & Rent'];
 
   const filteredProjects = filter === 'All' 
     ? PROJECTS 
